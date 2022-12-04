@@ -1,4 +1,4 @@
-# This is a Project for the Technical Assessment at salesken.ai
+# This is a Project for the Technical Assessment for salesken.ai
 ___
 **Language Used** - _JAVA, HTML_
 

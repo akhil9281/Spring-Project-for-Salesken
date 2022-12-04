@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      xsi:schemaLocation="http://www.thymeleaf.org " xmlns:xsi="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="UTF-8">
+  <title>Students</title>
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+        crossorigin="anonymous">
+</head>
+<body>
+<div class="container">
+  <div class="row">
+    <div class="col-lg-6 col-md-6 col-sm-6 container justify-content-center card">
+      <h1 class="Update Student:"></h1>
+      <div class="card-body">
+        <form method="POST" th:action="@{/students/{id} (id=${student.id})}" th:object="${student}">
+          <div class="form-group">
+            <label>Student Name</label>
+            <input
+                    type="text"
+                    name="studentName"
+                    th:field="*{name}"
+                    class="from-control"
+                    placeholder="${student.name})"
+            />
+          </div>
+
+          <div class="form-group">
+            <label>English Marks</label>
+            <input
+                    type="number"
+                    name="englishMarks"
+                    th:field="*{englishMarks}"
+                    class="from-control"
+                    placeholder="${student.englishMarks})"
+            />
+          </div>
+
+          <div class="form-group">
+            <label>Science Marks</label>
+            <input
+                    type="number"
+                    name="scienceMarks"
+                    th:field="*{scienceMarks}"
+                    class="from-control"
+                    placeholder="${student.scienceMarks})"
+            />
+          </div>
+
+          <div class="form-group">
+            <label>Maths Marks</label>
+            <input
+                    type="number"
+                    name="mathMarks"
+                    th:field="*{mathMarks}"
+                    class="from-control"
+                    placeholder="${student.mathMarks})"
+            />
+          </div>
+
+          <div class="form-group">
+            <label>Semester</label>
+            <input
+                    type="number"
+                    name="semester"
+                    th:field="*{semester}"
+                    class="from-control"
+                    placeholder="${student.semester})"
+            />
+          </div>
+
+          <div class="box-footer">
+            <button type="submit" class="btn btn-primary">
+              Submit
+            </button>
+          </div>
+
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

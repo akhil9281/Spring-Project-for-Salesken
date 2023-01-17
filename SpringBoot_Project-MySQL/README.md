@@ -6,4 +6,4 @@ ___
 
 **Front-end** - _Thymeleaf_
 
-**Additional Tools Used** - _Docker_
+**Additional Tools Used** - _Docker, Maven_

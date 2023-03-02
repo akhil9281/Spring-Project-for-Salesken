@@ -1,4 +1,4 @@
-# This is a Project for the Technical Assessment for salesken.ai
+# This is a practice Project to review my skills with my Spring Development skills
 ___
 **Language Used** - _JAVA, HTML_
 
